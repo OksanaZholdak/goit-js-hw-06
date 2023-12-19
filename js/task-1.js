@@ -4,7 +4,7 @@ const customer = {
   discount: 0.1,
   orders: ["Burger", "Pizza", "Salad"],
   // Change code below this line
-  getBalance(username) {
+  getBalance() {
     return this.balance;
   },
   getDiscount() {
@@ -17,7 +17,7 @@ const customer = {
     return this.orders;
   },
   addOrder(cost, order) {
-    this.balance -= Number(cost) - Number(cost) * this.discount;
+    this.balance;
     this.orders.push(order);
   },
   // Change code above this line
