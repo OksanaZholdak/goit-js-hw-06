@@ -17,11 +17,12 @@ const customer = {
     return this.orders;
   },
   addOrder(cost, order) {
-    this.balance;
+    this.balance -= cost - cost * this.discount;
     this.orders.push(order);
   },
   // Change code above this line
 };
+
 
 customer.setDiscount(0.15);
 console.log(customer.getDiscount()); // 0.15
